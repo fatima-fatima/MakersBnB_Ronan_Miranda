@@ -27,10 +27,13 @@ redirect page takes you to confirm/deny request page
 ------------------------------------------------------------------------------------------------------------
 *USER STORIES*
 
+As a host
+So I can log in
+I can sign in
 
 As a host
 So I can add my spaces
-once signed up- I can list a new space
+I can list a new space
 
 As a host
 So I can add different spaces
