@@ -65,4 +65,19 @@ I shouldnt be able to see pre-booked places
 I shouldnt be able to book these slots
 ------------------------------------------------------------------------------------------------------------
 
+SETTING UP THE DATABASE
 
+run psql
+CREATE DATABASE makersbnb
+
+To create a table- run the sql command in db/migrations/create_spaces_table.sql
+
+-------------------------------
+
+BEFORE RUNNING THE PROGRAM
+
+bundle install
+
+-------------------------------
+
+Query to add to the database: INSERT INTO spaces (name, address, price) VALUES ('Ceasars Palace', 'Las Vegas', 250);
