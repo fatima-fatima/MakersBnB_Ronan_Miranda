@@ -31,9 +31,9 @@ As a host
 So I can log in
 I can sign in
 
-As a host
+<!-- As a host
 So I can add my spaces
-I can list a new space
+I can list a new space --> 
 
 As a host
 So I can add different spaces
