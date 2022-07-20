@@ -8,15 +8,15 @@ describe Space do
       
       spaces = Space.all
       
-      expect(spaces).to include "Buckingham Palace"
-      expect(spaces).to include "Ceasars Palace"
+      expect(spaces[-2]['name']).to include "Buckingham Palace"
+      expect(spaces[-1]['name']).to include "Ceasars Palace"
     end
   end
 
   context "when #create is called" do
     it "adds a space to the db" do
       new_space = Space.create("Pizza Hut", "Pepperoni Street", 15)
-      expect(Space.all).to include "Pizza Hut"
+      expect(Space.all[-1]['name']).to include "Pizza Hut"
     end
   end
 end
