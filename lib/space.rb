@@ -8,7 +8,8 @@ class Space
   end
   def self.create(name, address, price)
     connection = PG.connect(dbname: 'makersbnb')
-    result = connection.exec("INSERT INTO spaces (name, address, price) VALUES ('Pizza Hut', 'Pepperoni Street', 15);")   
+    result = connection.exec("INSERT INTO spaces (name, address, price) VALUES ('#{name}', '#{address}', '#{price}');")   
+    
   end
 
 
