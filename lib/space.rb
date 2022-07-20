@@ -8,7 +8,6 @@ class Space
       connection = PG.connect(dbname: 'makersbnb')
     end
     result = connection.exec("SELECT * FROM spaces;")
-    result.map { | row | row['name'] }
   end
 
   def self.create(name, address, price)
