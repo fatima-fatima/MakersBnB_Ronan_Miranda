@@ -6,4 +6,12 @@ class Space
     result = connection.exec("SELECT * FROM spaces;")
     result.map { | row | row['name'] }
   end
+  def self.create(name, address, price)
+    connection = PG.connect(dbname: 'makersbnb')
+    result = connection.exec("INSERT INTO spaces (name, address, price) VALUES ('Pizza Hut', 'Pepperoni Street', 15);")   
+  end
+
+
+
+
 end

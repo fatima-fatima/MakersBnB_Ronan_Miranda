@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
-
+require './lib/space'
 class MakersBnb < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
@@ -32,7 +32,7 @@ class MakersBnb < Sinatra::Base
     @price = session[:price]
     @start_date = session[:start]
     @end_date = session[:end]
-    
+    @spaces = Space.all
     erb(:view_listing)
   end
 

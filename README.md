@@ -80,4 +80,5 @@ bundle install
 
 -------------------------------
 
-Query to add to the database: INSERT INTO spaces (name, address, price) VALUES ('Ceasars Palace', 'Las Vegas', 250);
+Query to add to the database: INSERT INTO spaces (name, address, price) VALUES ('Buckingham Palace', 'Queens Drive', 150);
+                              INSERT INTO spaces (name, address, price) VALUES ('Ceasars Palace', 'Las Vegas', 250);
