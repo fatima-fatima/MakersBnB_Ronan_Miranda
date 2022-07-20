@@ -1,1 +1,8 @@
-<%= @spaces %>
+<% @spaces.map do |row| %>
+    <%   row.each do |key, value| %>
+      <%  if key != 'id' %>
+       <%= value %> 
+      <%  end %>
+     <% end %>
+    <br> <br>
+   <% end %>

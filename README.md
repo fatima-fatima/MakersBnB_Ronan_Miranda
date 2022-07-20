@@ -69,13 +69,14 @@ SETTING UP THE DATABASE
 1. run: psql
 2. CREATE DATABASE makersbnb
 3. To create a table- run the sql command in db/migrations/create_spaces_table.sql
+4. After creating the database, run the command in date_collumn_datatype.sql (modifies the erroneous datatype for start date, end date to be the correct DATE format)
 ___
 
 SETTING UP THE TEST DATABASE
 1. run: psql
 2. CREATE DATABASE makersbnb_test;
 3. To create a table- run the sql command in db/migrations/create_spaces_table.sql
-
+4. After creating the test database, run the command in date_collumn_datatype.sql (modifies the erroneous datatype for start date, end date to be the correct DATE format)
 -------------------------------
 
 BEFORE RUNNING THE PROGRAM
