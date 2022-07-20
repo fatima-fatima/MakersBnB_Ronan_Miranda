@@ -66,11 +66,15 @@ I shouldnt be able to book these slots
 ------------------------------------------------------------------------------------------------------------
 
 SETTING UP THE DATABASE
+1. run: psql
+2. CREATE DATABASE makersbnb
+3. To create a table- run the sql command in db/migrations/create_spaces_table.sql
+___
 
-run psql
-CREATE DATABASE makersbnb
-
-To create a table- run the sql command in db/migrations/create_spaces_table.sql
+SETTING UP THE TEST DATABASE
+1. run: psql
+2. CREATE DATABASE makersbnb_test;
+3. To create a table- run the sql command in db/migrations/create_spaces_table.sql
 
 -------------------------------
 
