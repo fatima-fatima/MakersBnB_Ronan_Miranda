@@ -7,11 +7,14 @@
     <input id="price" name="price" type="text"/>
     <label for="start">Start date:</label>
     <input type="date" id="start" name="start"
+       required pattern="\d{4}-\d{2}-\d{2}"
        value="2022-07-22"
        min="2022-07-19" max="2023-12-31">
     <label for="end">End date:</label>
     <input type="date" id="end" name="end"
+       required pattern="\d{4}-\d{2}-\d{2}"
        value="2022-07-25"
        min="2022-07-19" max="2023-12-31">
    <input type="submit" value="Submit" name="submit"/>
 </form>
+

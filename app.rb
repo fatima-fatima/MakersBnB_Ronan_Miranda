@@ -17,7 +17,7 @@ class MakersBnb < Sinatra::Base
   end
 
   post '/view-listing' do
-    Space.create(params[:name], params[:address], params[:price])
+    Space.create(params[:name], params[:address], params[:price], params[:start], params[:end])
     redirect '/view-listing'
   end
 
