@@ -18,14 +18,14 @@ RSpec.describe User do
     context "if username and password exist" do
         it "#login returns true" do
             User.create("Ronan2", "useremail2@gmail.com", "password2")
-            expect(User.login?("Ronan2", "useremail2@gmail.com", "password2")).to eq true
+            expect(User.login?("useremail2@gmail.com", "password2")).to eq true
         end
     end
 
     context "if username and password do not both exist" do
         it "#login returns false" do
             User.create("Ronan2", "useremail2@gmail.com", "password2")
-            expect(User.login?("Ronan2", "useremail2@gmail.com", "testpword")).to eq false
+            expect(User.login?("useremail2@gmail.com", "testpword")).to eq false
         end
     end
 end
