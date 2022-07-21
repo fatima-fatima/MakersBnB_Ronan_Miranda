@@ -26,27 +26,30 @@ redirect page takes you to confirm/deny request page
 
 ------------------------------------------------------------------------------------------------------------
 *USER STORIES*
-
-As a host
-So I can log in
-I can sign in
-
 <!-- As a host
 So I can add my spaces
 I can list a new space --> 
 
-As a host
+<!-- As a host
 So I can add different spaces
-I can add more than one space
+I can add more than one space -->
 
-As a host
+<!-- As a host
 So I can show details regarding my space
-I'd like to list the name, a bio and a price-per-night
-
+I'd like to list the name, a bio and a price-per-night -->
+<!-- 
 As a host
 So I can show dates available for my space
 I'd like to provide dates that my space is available so other
-users can see
+users can see -->
+
+<!-- As a host
+So I can add spaces
+I can sign up -->
+
+As a host
+If I have an account
+I can Sign in
 
 As a host
 So I can approve/disapprove hire requests
@@ -68,15 +71,16 @@ I shouldnt be able to book these slots
 SETTING UP THE DATABASE
 1. run: psql
 2. CREATE DATABASE makersbnb
-3. To create a table- run the sql command in db/migrations/create_spaces_table.sql
-4. After creating the database, run the command in date_collumn_datatype.sql (modifies the erroneous datatype for start date, end date to be the correct DATE format)
-___
+3. To create a table- run the sql command in db/migrations/01_create_spaces_table.sql
+4. After creating the database, run the command in db/migrations/02_date_collumn_datatype.sql (modifies the erroneous datatype for start date, end date to be the correct DATE format)
+5. To create the user table, run the sql command in db/migrations/03_create_user_table.sql
 
 SETTING UP THE TEST DATABASE
 1. run: psql
 2. CREATE DATABASE makersbnb_test;
-3. To create a table- run the sql command in db/migrations/create_spaces_table.sql
-4. After creating the test database, run the command in date_collumn_datatype.sql (modifies the erroneous datatype for start date, end date to be the correct DATE format)
+3. To create a table- run the sql command in 01_db/migrations/create_spaces_table.sql
+4. After creating the test database, run the command in 02_date_collumn_datatype.sql (modifies the erroneous datatype for start date, end date to be the correct DATE format)
+5. To create the user table, run the sql command in db/migrations/03_create_user_table.sql
 -------------------------------
 
 BEFORE RUNNING THE PROGRAM
@@ -87,3 +91,4 @@ bundle install
 
 Query to add to the database: INSERT INTO spaces (name, address, price) VALUES ('Buckingham Palace', 'Queens Drive', 150);
                               INSERT INTO spaces (name, address, price) VALUES ('Ceasars Palace', 'Las Vegas', 250);
+

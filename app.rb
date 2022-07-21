@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/space'
+require './lib/user'
 class MakersBnb < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
@@ -9,7 +10,12 @@ class MakersBnb < Sinatra::Base
   enable :sessions 
 
   get '/' do
-    'Testing'
+    erb(:index)
+  end
+
+  post '/new_user' do
+    User.create(params[:username],params[:email],params[:password])
+    redirect '/add-listing'
   end
 
   get '/add-listing' do
@@ -17,7 +23,7 @@ class MakersBnb < Sinatra::Base
   end
 
   post '/view-listing' do
-    Space.create(params[:name], params[:address], params[:price])
+    Space.create(params[:name], params[:address], params[:price], params[:start], params[:end])
     redirect '/view-listing'
   end
 
