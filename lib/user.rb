@@ -1,5 +1,5 @@
 class User
-    def self.login?(username, email, password)
+    def self.login?(email, password)
         if ENV['ENVIRONMENT'] == 'test'
             connection = PG.connect(dbname: 'makersbnb_test')
           else
@@ -12,12 +12,7 @@ class User
             end
         end
         return false
-  
-        # if email == 'email@example.com' && password == 'password'
-        #     return true
-        # else
-        #     return false
-        # end
+
     end
 
     def self.all
