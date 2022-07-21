@@ -43,9 +43,13 @@ So I can show dates available for my space
 I'd like to provide dates that my space is available so other
 users can see -->
 
+<!-- As a host
+So I can add spaces
+I can sign up -->
+
 As a host
-So I can log in
-I can sign in
+If I have an account
+I can Sign in
 
 As a host
 So I can approve/disapprove hire requests
