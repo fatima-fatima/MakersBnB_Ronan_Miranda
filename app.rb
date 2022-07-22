@@ -18,14 +18,20 @@ class MakersBnb < Sinatra::Base
   end
 
   post '/login' do
-    user1 = User.login?(params[:email], params[:password])
-    p user1
-    redirect 'add-listing'
+    if User.login?(params[:email], params[:password]) == true
+      redirect 'add-listing'
+    else
+      redirect '/login'
+    end
   end
 
   post '/new_user' do
-    User.create(params[:username],params[:email],params[:password])
-    redirect '/add-listing'
+     User.create(params[:username],params[:email],params[:password])
+      if params[:username].empty? || params[:email].empty? || params[:password].empty?
+     redirect '/'
+    else 
+      redirect '/add-listing'
+    end
   end
 
   get '/add-listing' do
