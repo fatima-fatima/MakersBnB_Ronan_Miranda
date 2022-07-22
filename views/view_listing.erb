@@ -1,3 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <title>MakersBnb - Team 3</title>
+<link href=" <%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<form action="/add-listing" method="get">
+      <input type="submit" value="Add Space" name="add_space"/>
+        </form>
+
+
 <% @spaces.each do |row| %>
     <%   row.each do |key, value| %>
       <%  if key != 'id' %>
@@ -6,3 +19,4 @@
      <% end %>
     <br> <br>
     <% end %>
+    
