@@ -30,7 +30,7 @@ class MakersBnb < Sinatra::Base
       if params[:username].empty? || params[:email].empty? || params[:password].empty?
      redirect '/'
     else 
-      redirect '/add-listing'
+      redirect '/login'
     end
   end
 
