@@ -1,20 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <title>MakersBnb - Team 3</title>
+<link href=" <%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+</head>
+
+<div class = "form">
 <form action="/view-listing" method="post">
-    <label for="name">Name</label>
+   <div style="text-align: right" class = "inputsinform"> 
+   <label for="name">Name</label>
     <input id="name" name="name" type="text"/>
+    </div>
+    <div style="text-align: right" class = "inputsinform"> 
     <label for="address">Address</label>
     <input id="address" name="address" type="text"/>
+    </div>
+    <div style="text-align: right" class = "inputsinform"> 
     <label for="price">Price</label>
     <input id="price" name="price" type="text"/>
+    </div>
+    <div style="text-align: right" class = "inputsinform"> 
     <label for="start">Start date:</label>
     <input type="date" id="start" name="start"
        required pattern="\d{4}-\d{2}-\d{2}"
        value="2022-07-22"
        min="2022-07-19" max="2023-12-31">
+       </div>
+       <div style="text-align: right" class = "inputsinform"> 
     <label for="end">End date:</label>
     <input type="date" id="end" name="end"
        required pattern="\d{4}-\d{2}-\d{2}"
        value="2022-07-25"
        min="2022-07-19" max="2023-12-31">
-   <input type="submit" value="Submit" name="submit"/>
+       </div>
+       <div style="text-align: right" class = "inputsinform"> 
+   <input type="submit" value="Submit" name="submit" class="button"/>
+   </div>
 </form>
 
+</div>

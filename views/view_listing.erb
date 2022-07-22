@@ -4,12 +4,11 @@
 <link href=" <%= url('/style.css') %>" rel="stylesheet" type="text/css" />
 </head>
 
-
+<div class = "view_listings_page">
 
 <form action="/add-listing" method="get">
-      <input type="submit" value="Add Space" name="add_space"/>
+      <input type="submit" value="Add Space" name="add_space" class = "button"/>
         </form>
-
 
 <% @spaces.each do |row| %>
     <%   row.each do |key, value| %>
@@ -19,4 +18,4 @@
      <% end %>
     <br> <br>
     <% end %>
-    
+    </div>
