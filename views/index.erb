@@ -1,3 +1,10 @@
+<head>
+  <meta charset="utf-8">
+  <title>MakersBnb - Team 3</title>
+<link href=" <%= url('/style.css') %>" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class = "signup_page">
 <h1> Sign up! </h1>
 
 <form action="/new_user" method="post">
@@ -7,10 +14,13 @@
     <input id="email" name="email" type="email"/>
     <label for="password">Password</label>
     <input id="password" name="password" type="password"/>
-    <input type="submit" value="Sign Up" name="submit"/>
+    <input type="submit" value="Sign Up" name="submit" class = "button"/>
 </form>
 
 
 <form action="/login" method="get">
-<input type="submit" value="Sign In" name="login"/>
+<input type="submit" value="Sign In" name="login" class = "button"/>
 </form>
+
+</div>
+</body>

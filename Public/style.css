@@ -1,0 +1,34 @@
+.form {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 30px;
+    padding: 2.5rem;
+    font-size: xx-large;
+    
+        }
+
+.inputsinform {
+    padding-bottom: 1.5rem;
+    font-size: xx-large;
+}
+
+.button {
+    background-color: #89023E;
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.signup_page {
+    font-size: x-large;
+}
+
+body {
+    background-color: #F3E1DD;
+}
